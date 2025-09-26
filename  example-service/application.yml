@@ -1,2 +1,5 @@
+spring:
+  application:
+    name: example-service
 server:
   port: 9999
