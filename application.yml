@@ -1,0 +1,5 @@
+greeting:
+  message: "Hello from the config server! 🚀"
+
+database:
+  url: "jdbc:postgresql://localhost:5432/devdb"
