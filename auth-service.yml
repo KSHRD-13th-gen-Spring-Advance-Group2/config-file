@@ -1,0 +1,28 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: '{cipher}3a5c21a11b056ceed2b934b8142ccfcebe51cb02873ace23afec837c6e6eba2f'
+
+keycloak:
+  realm: '{cipher}eba00bb8790dbb6195d4d8fcbe92550f83184144ba4a0e913da5f6173d150376'
+  endpoint: '{cipher}d6a585f6e6735a7216cdb232428625eee1adda73388e68ed6baeee5e39bd3272'
+  application:
+    client-id: '{cipher}551cb04555125e355d06d6af882f8f178a4bc701323c38b4c41db57b6a4f760b'
+    client-secret: '{cipher}5d4da8c77c426c319d3bd8bf7c1053960607c41a20d69bc9300126945c3d0e398a97ef412bbbc7de7bdf106189f204cc8a5e66fa7893d87ddf9a79f3a029a459'
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+    propagation:
+      enabled: true
+  zipkin:
+    tracing:
+      enabled: true
+      endpoint: '{cipher}47d2fd3e298e419cc57fd66145224eabee362e421c68ff58e4ff0815fd162bed'
+      connect-timeout: 5000
+      read-timeout: 10000
+      flush-interval: 1000
+      batch-size: 10
