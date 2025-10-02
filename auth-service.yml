@@ -3,21 +3,21 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8090/realms/mini-project
+          issuer-uri: http://35.209.164.72:8080/realms/mini-project
 
 eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://35.209.164.72:8761/eureka/
 
 keycloak:
   realm: mini-project
-  endpoint: http://localhost:8090
+  endpoint: http://35.209.164.72:8080
   application:
     client-id: auth-service
-    client-secret: yvYjkkXdyk81KJDeJ37E4CKeAL69MIAn
+    client-secret: "{cipher}e289b33f8bcb15f080e0816c75d577572743b2d89634dfdcd22ead33b8facaef26a7e7afd77e76ab06d45ffda70cada0eeb9aa05af8ba2c2a49c7620fc897a1b"
 
 management:
   tracing:
@@ -28,7 +28,7 @@ management:
   zipkin:
     tracing:
       enabled: true
-      endpoint: http://localhost:9411/api/v2/spans
+      endpoint: http://35.209.164.72:9411/api/v2/spans
       connect-timeout: 5000
       read-timeout: 10000
       flush-interval: 1000
