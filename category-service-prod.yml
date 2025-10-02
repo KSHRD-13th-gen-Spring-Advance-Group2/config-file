@@ -22,7 +22,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8090/realms/mini-project
+          issuer-uri: http://35.209.164.72:8080/realms/mini-project
 
 server:
   port: 8083
@@ -73,6 +73,7 @@ eureka:
     lease-expiration-duration-in-seconds: 10
 
     instance-id: "${spring.application.name}:${server.port}"
+
 
 
 
